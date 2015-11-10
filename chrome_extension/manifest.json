@@ -1,0 +1,35 @@
+{
+   
+    "key" : "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwPE7ZzIjVT8AT2EBgKUer0vY4F++dQm7yd6aSKD6Hr1ARXBHaiLCozrhU+YkPYEBEQdXAX6pTEYcqdvYpWMqKFEJENqpIHfq0n31hTjQ0FwKOH0gEz96IhUeWXaA7kB0HrOT3Y0AUeW7Haf99yN4s4wIu7eNBYYYhr5eZtP/uQYEdl9qbdRx0eJSV9Wc/Zw9mbKXZLYycfIBxqjcexaKU6rZmklEy0cjBnZFZnf6TADJJ8F56VEHMf/Jj0SiljYSy2qHwt35Fl0Hc8d2OFQnki8NYYSTVl4ck2ra7nttxJLhmtTmZYNID+E/QKCHJ/Ykcv0+s2BKvyQB94Vjm+3wZAgMBAAECggEAI2/dAxqHoSzqGJNxTmS+jqRa8iiN+/cxy/uXOOhyumHcHcF/rYuyyh7XHe8XSko2YgNC8e3Kl+18WmOVV/cMsvsj4AeF8f5lPRCc64YIJTlDQES1/JG304fJP0kQQSnXTIXNfJkud297gQmlYCuV0TzMYZdgDPOJPxjJyRSGKegYlp0hNj1ZWJu8hZLruk7pNqwBNo+C7i2k5n6Yy8sPvnjCshlQILTM3cD/lizhZSEFj9i3Np8j1xMuGEMs07Z6qhnQiJOD1vcVSo2q5Miqiku3Oui3s8SOLQb4MHBxZNLxpgGmDNjspfEBxrJldWbXd8bnr3OhEF63AOHTjSxHIQKBgQDZYP1Ao1TnBznmNV3C20weh8ytCg26Tr6QC8Q3DI4ZiuSZ8mxt1YOCiWdw1kQWKGfygCesZ5hBVWadUI4ueCUyThdoSxEbIG33JZSTnZy/28H0g8Sm5a+tnOBQaC3RF887mGqTUDglndWQGbVDDIPfwPyDtyCZ9n5ldqZ6MQBszQKBgQDPjAE28jWV8AB0xbKek/+FLaCid7EZ9DbdyPGNpH/3MghDo6ojWrk0ffRcwC9zRogIwYq0frLwr9fD5M7dSuj+k8PVof8yQlxM5inH7f3qoebNG943/jLMLIke4y8cWhq7sJU+2bXpnShjU66VY+oBqJC54uziSVKLLyeDT1/MfQKBgCXKD5yqCDt1bSJRCrCyMORp1TILumE2CTi/Yufy/c0A8Ua19xWM9aS+wEXEaee0NIXas4rsI3LQJtuYQm9foY/CNZ2C10Fw/MznMpIK51IPIQOh2JDvAwBackBoK/bafcMtdvGPE4OukY7QeUtjpJVEVmGLd1ZsnIKFAuHhHOLNAoGBAKbYqT1Pt45Cs0sshyx+U6LvjDwvtnrj3Zur56vzez/ww74Ee0kSrOKrAt/xS/QC1mcbl/MEC7v70JvVfAtgJjBJ/9vk8C+qM2NKgHoOM9sErnNjHOCshI+omc7v2baUJPuPuFsfT+NvCMHYyvejq8ILjdUxvTcotKfZj407KQtNAoGBAM/aBeIP0BKc2MRfMweQort/DUF0jURvtBY0PhLsIfz17w4yNsuenMeVigpFoh1ufpqKZXpxuBlY8hG7pLV1Egm/4tT7+D4FkiZmEXiNSly/bH3/MJ3yRKhyPXEL+dgeoZgvfsuifz6ERuFm7ZcD9kzQ9g1ovz8rnEpfL8c5/EBv",
+    
+"version": "1.0",
+  
+    "manifest_version": 2,
+
+  
+    "name": "Getting started example",
+  
+    "description": "This extension shows a Google Image search result for the current page",
+  
+    
+    "browser_action": {
+    
+        "default_icon": "icon.png",
+    
+        "default_popup": "popup.html",
+        "default_title" : "HAHA"      
+	},
+  
+	/* background하면 crx실행되자마자 js내 주소로 이동함 */
+	/*
+    "background": {
+        "scripts": ["background.js"]},  
+	*/	
+
+    "permissions": [ "identity",  "activeTab", "https://ajax.googleapis.com/"],
+
+    "oauth2" : {
+        "client_id" : "9381694653-5dl97grr2h23kg88a6g2mrr8engau77p.apps.googleusercontent.com",
+        "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ]
+    }
+}

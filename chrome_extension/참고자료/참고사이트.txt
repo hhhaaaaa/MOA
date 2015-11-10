@@ -1,0 +1,13 @@
+http://ggooung2.blogspot.kr/2013/08/getting-started-building-chrome.html
+
+https://support.google.com/chrome/a/answer/2714278?hl=ko
+
+http://blog.secmem.org/273
+
+http://saksin.tistory.com/1177
+
+https://developer.chrome.com/extensions/getstarted
+
+
+!!
+http://stackoverflow.com/questions/25044936/chrome-identity-user-authentication-in-a-chrome-extension

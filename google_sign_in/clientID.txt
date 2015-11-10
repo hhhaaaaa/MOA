@@ -1,0 +1,5 @@
+google OAuth 클라이언트 ID
+9381694653-g7ggqmnjtaj11omughhl86dku2k2f81b.apps.googleusercontent.com
+
+보안 비밀
+HpMq8ddWbOm3YJ_UJKA_5k8s

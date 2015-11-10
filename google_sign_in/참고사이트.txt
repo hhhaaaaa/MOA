@@ -1,0 +1,17 @@
+https://developers.google.com/console/help/new/?hl=ko#installedapplications-chrome
+
+https://developers.google.com/identity/protocols/OAuth2
+
+https://developers.google.com/identity/sign-in/web/devconsole-project
+
+https://developers.google.com/identity/sign-in/web/
+
+http://kwangheum.blogspot.kr/2014/08/blog-post.html
+
+http://www.clien.net/cs2/bbs/board.php?bo_table=kin&wr_id=3379418
+
+http://javapark.net/entry/javascript-%EA%B5%AC%EA%B8%80-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%B0%EB%8F%99
+
+
+-----------
+https://console.developers.google.com/project/project-moa-1070/apiui/credential

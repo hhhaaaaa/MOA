@@ -1,0 +1,70 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title>MOA</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+        }
+
+        #status {
+            /* avoid an excessively wide status text */
+            white-space: pre;           /**/
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 400px;
+        }
+        #status {
+            /* avoid an excessively wide status text */
+            white-space: pre;           /**/
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 400px;
+        }
+        #google_signin {
+            /* avoid an excessively wide status text */
+            white-space: pre;           /**/
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 400px;
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="9381694653-g7ggqmnjtaj11omughhl86dku2k2f81b.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div id="google_signin" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log("Name: " + profile.getName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        };
+    </script>
+    <div id="status"></div>
+    <img id="image-result" hidden>
+</body>
+</html>
+
